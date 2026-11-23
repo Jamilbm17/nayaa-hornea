@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+catalogo/
+tools/pdf/__pycache__/
+tools/pdf/*.html
+tools/pdf/bg.jpg
+tools/pdf/*.pdf
+*.log

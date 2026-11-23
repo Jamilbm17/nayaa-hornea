@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{brand.name}} · Galletas navideñas hechas con amor</title>
+  <meta name="description" content="Galletas navideñas hechas a mano: caja colección, casita navideña para armar y cajita para decorar. Pide por WhatsApp.">
+  <meta name="theme-color" content="#4a0d17">
+  <meta property="og:title" content="{{brand.name}} · {{brand.season}}">
+  <meta property="og:description" content="Galletas hechas con amor para esta Navidad. Pide por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/caja-casita.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#inicio">{{brand.name}}</a>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#pedir">Cómo pedir</a>
+      <a class="btn btn-gold btn-sm" href="{{generalLink}}" target="_blank" rel="noopener">Pedir</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="garland" aria-hidden="true"></div>
+    <div class="lights" aria-hidden="true"></div>
+
+    <div class="hero-text reveal">
+      <p class="eyebrow"><i></i> Colección {{brand.season}} <i></i></p>
+      <p class="script">{{brand.name}}</p>
+      <h1>Galletas hechas con amor<br><em>para esta Navidad</em></h1>
+      <p class="lead">Horneadas a mano, con cariño y con el sabor de la Navidad de siempre. Gracias por dejarnos ser parte de tu mesa y de tus momentos más bonitos.</p>
+      <div class="cta">
+        <a class="btn btn-wa" href="{{generalLink}}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 8.2c.3-.6.6-.6.9-.6h.6c.2 0 .4.1.5.4l.8 1.9c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.4.8 1.4 1.9 2.6 2.4.2.1.4 0 .5-.1l.6-.7c.2-.2.4-.2.6-.1l1.8.9c.2.1.3.3.3.5 0 .9-.6 1.8-1.6 1.9-1.1.1-2.9-.4-4.7-2.1-1.7-1.6-2.3-3.4-2.2-4.4 0-.6.4-1.3.6-1.6Z" fill="currentColor"/></svg>
+          Pedir por WhatsApp
+        </a>
+        <a class="btn btn-line" href="#catalogo">Ver el catálogo</a>
+      </div>
+    </div>
+
+    <div class="arches reveal">
+      {{#each products}}
+      <a class="arch-wrap" href="#{{id}}">
+        <div class="arch"><img src="{{photoUrl}}" alt="{{name}}" width="1000" height="1333" style="object-position:{{photoFocus}}"></div>
+        <span>{{name}}</span>
+      </a>
+      {{/each}}
+    </div>
+    <div class="hills" aria-hidden="true"></div>
+  </section>
+
+  <!-- CINTA -->
+  <div class="strip" aria-hidden="true">
+    <span>Hecho a mano</span><b>✦</b><span>Con mucho cariño</span><b>✦</b><span>Listo para regalar</span><b>✦</b><span>Navidad {{year}}</span><b>✦</b><span>Hecho a mano</span><b>✦</b><span>Con mucho cariño</span><b>✦</b><span>Listo para regalar</span><b>✦</b>
+  </div>
+
+  <main>
+    <!-- CATALOGO -->
+    <section class="catalog" id="catalogo">
+      <header class="section-head reveal">
+        <p class="eyebrow dark"><i></i> Nuestro catálogo <i></i></p>
+        <h2>Tres formas de regalar dulzura</h2>
+        <p class="script green">elige la que más te enamore</p>
+      </header>
+
+      {{#each products}}
+      <article class="product reveal" id="{{id}}">
+        <div class="product-media">
+          {{#if featured}}<span class="badge">{{featured}}</span>{{/if}}
+          <div class="frame">
+            <img src="{{photoUrl}}" alt="{{name}}" loading="lazy" width="1000" height="1333" style="object-position:{{photoFocus}}">
+            <span class="ribbon">{{ribbon}}</span>
+          </div>
+          <figure class="polaroid"><img src="{{insideUrl}}" alt="{{insideCaption}}" loading="lazy" width="1000" height="1333"><figcaption>{{insideCaption}}</figcaption></figure>
+        </div>
+
+        <div class="product-body">
+          <p class="num">{{num}}</p>
+          <h3>{{name}}</h3>
+          <p class="script green">{{tagline}}</p>
+          <p class="blurb">{{blurb}}</p>
+          <h4>¿Qué contiene?</h4>
+          <ul class="specs">
+            {{#each specs}}
+            <li><b>{{label}}:</b> {{text}}</li>
+            {{/each}}
+          </ul>
+          <div class="buy">
+            <div class="price"><small>Precio</small><span><i>S/</i>{{price}}</span></div>
+            <a class="btn btn-wa" href="{{orderLink}}" target="_blank" rel="noopener">Pedir esta caja</a>
+          </div>
+        </div>
+      </article>
+      {{/each}}
+    </section>
+
+    <!-- COMO PEDIR -->
+    <section class="order" id="pedir">
+      <header class="section-head reveal">
+        <p class="eyebrow"><i></i> {{brand.name}} <i></i></p>
+        <h2>¿Cómo hacer tu pedido?</h2>
+        <p class="script">te lo contamos paso a paso</p>
+      </header>
+
+      <ol class="steps reveal">
+        {{#each steps}}
+        <li><span class="n">{{n}}</span><h3>{{title}}</h3><p>{{text}}</p></li>
+        {{/each}}
+      </ol>
+
+      <div class="menu reveal">
+        <h3>Nuestras cajas</h3>
+        {{#each priceList}}
+        <div class="row"><span>{{name}}</span><i></i><b>S/ {{price}}</b></div>
+        {{/each}}
+      </div>
+
+      <div class="final reveal">
+        <p class="script">¿Lista tu caja de Navidad?</p>
+        <div class="cta">
+          <a class="btn btn-wa" href="{{generalLink}}" target="_blank" rel="noopener">Escríbenos · {{brand.whatsappDisplay}}</a>
+          <a class="btn btn-line" href="{{instagramUrl}}" target="_blank" rel="noopener">Instagram @{{brand.instagram}}</a>
+        </div>
+        <p class="dl"><a href="/assets/catalogo-navideno-nayaa-hornea.pdf" download>Descargar el catálogo en PDF</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="script">Cada galleta se hornea con amor y se empaca pensando en ti.<br>¡Gracias por elegirnos para endulzar tu Navidad!</p>
+    <p class="small">© {{year}} {{brand.name}} · Hecho con cariño</p>
+  </footer>
+
+  <a class="fab" href="{{generalLink}}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 8.2c.3-.6.6-.6.9-.6h.6c.2 0 .4.1.5.4l.8 1.9c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.4.8 1.4 1.9 2.6 2.4.2.1.4 0 .5-.1l.6-.7c.2-.2.4-.2.6-.1l1.8.9c.2.1.3.3.3.5 0 .9-.6 1.8-1.6 1.9-1.1.1-2.9-.4-4.7-2.1-1.7-1.6-2.3-3.4-2.2-4.4 0-.6.4-1.3.6-1.6Z" fill="currentColor"/></svg>
+  </a>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
