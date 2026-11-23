@@ -1,13 +1,14 @@
-import { Controller, Get, Render } from '@nestjs/common';
+import { Controller, Get, Header } from '@nestjs/common';
 import { CatalogService } from './catalog/catalog.service';
+import { renderHome } from './views/render';
 
 @Controller()
 export class AppController {
   constructor(private readonly catalog: CatalogService) {}
 
   @Get()
-  @Render('index')
-  home() {
-    return this.catalog.home();
+  @Header('Content-Type', 'text/html; charset=utf-8')
+  home(): string {
+    return renderHome(this.catalog.home());
   }
 }
