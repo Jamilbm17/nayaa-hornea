@@ -1,7 +1,7 @@
 {
   "name": "nayaa-hornea",
   "version": "1.0.0",
-  "description": "Landing y catálogo navideño de Nayaa Hornea",
+  "description": "Landing y catálogo navideño de Naaya Hornea",
   "private": true,
   "scripts": {
     "prebuild": "node scripts/embed-views.js",

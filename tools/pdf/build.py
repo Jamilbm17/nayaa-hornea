@@ -7,7 +7,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 WHATSAPP = "937 237 779"
-INSTAGRAM = "@nayaa_hornea"
+INSTAGRAM = "@naaya_hornea"
 
 GREENS = ["#123a22", "#174a2b", "#1d5a33", "#24693c", "#2f7a47", "#3b8d52"]
 
@@ -314,7 +314,7 @@ def build():
         st += (f'<div class="step"><div class="ball"><svg style="color:{c}"><use href="#ornplain"/></svg><span>{i}</span></div>'
                f'<div><h4>{h}</h4><p>{p}</p></div></div>')
     order_inner = f"""
-  <div class="kicker"><svg><use href="#star"/></svg> Nayaa Hornea <svg><use href="#star"/></svg></div>
+  <div class="kicker"><svg><use href="#star"/></svg> Naaya Hornea <svg><use href="#star"/></svg></div>
   <h2>¿Cómo hacer tu pedido?</h2>
   <p class="script">te lo contamos paso a paso</p>
   <div class="steps">{st}</div>
@@ -352,7 +352,7 @@ TEMPLATE = r"""<!doctype html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Catálogo Navideño - Nayaa Hornea</title>
+<title>Catálogo Navideño - Naaya Hornea</title>
 <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Great+Vibes&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 @page { size: 210mm 297mm; margin: 0; }
@@ -486,7 +486,7 @@ h1 .c2{display:block;font-size:112px;color:var(--green);text-shadow:0 3px 0 #f3d
 def export_pdf():
     chrome = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
     html = (HERE / "catalogo.html").resolve().as_uri()
-    out = HERE / "Catalogo-Navideno-Nayaa-Hornea.pdf"
+    out = HERE / "Catalogo-Navideno-Naaya-Hornea.pdf"
     subprocess.run([chrome, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
                     "--virtual-time-budget=20000", f"--print-to-pdf={out}", html], check=True)
     import pymupdf

@@ -22,11 +22,11 @@ export interface Product {
 }
 
 export const BRAND = {
-  name: 'Nayaa Hornea',
+  name: 'Naaya Hornea',
   season: 'Navidad 2026',
   whatsapp: process.env.WHATSAPP ?? '51937237779',
   whatsappDisplay: '937 237 779',
-  instagram: process.env.INSTAGRAM ?? 'nayaa_hornea',
+  instagram: process.env.INSTAGRAM ?? 'naaya_hornea',
 };
 
 export const PRODUCTS: Product[] = [

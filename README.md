@@ -1,6 +1,6 @@
-# Nayaa Hornea
+# Naaya Hornea
 
-Landing y catálogo navideño de **Nayaa Hornea**, hecho con NestJS (plantillas Handlebars).
+Landing y catálogo navideño de **Naaya Hornea**, hecho con NestJS (plantillas Handlebars).
 
 ## Cómo correrlo
 
@@ -31,4 +31,4 @@ cd tools/pdf
 python build.py
 ```
 
-Luego copia `Catalogo-Navideno-Nayaa-Hornea.pdf` a `public/assets/catalogo-navideno-nayaa-hornea.pdf`.
+Luego copia `Catalogo-Navideno-Naaya-Hornea.pdf` a `public/assets/catalogo-navideno-naaya-hornea.pdf`.

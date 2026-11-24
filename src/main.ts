@@ -12,6 +12,6 @@ async function bootstrap() {
   });
   const port = process.env.PORT ?? 3000;
   await app.listen(port);
-  console.log(`Nayaa Hornea listo en http://localhost:${port}`);
+  console.log(`Naaya Hornea listo en http://localhost:${port}`);
 }
 bootstrap();
