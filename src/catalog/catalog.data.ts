@@ -47,7 +47,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Variedad de galletas', text: '5 mini chips, 5 polvorones, 3 choco brownie, 4 niditos de amor y 11 estrellitas.' },
       { label: 'Galletas navideñas', text: '1 árbol y 1 muñeco de jengibre.' },
       { label: 'Bien cuidadas', text: 'cada galletita va en su capacillo, acomodada con cariño.' },
-      { label: 'Presentación', text: 'caja kraft con ventana, lazo y tarjeta de agradecimiento.' },
+      { label: 'Presentación', text: 'caja kraft con ventana y lazo.' },
     ],
   },
   {
@@ -65,13 +65,13 @@ export const PRODUCTS: Product[] = [
     insideCaption: 'todo lo que trae',
     photoFocus: '50% 62%',
     specs: [
-      { label: 'Casita para armar', text: 'piezas de galleta (paredes y techo) con relieve de puerta y ventanas.' },
+      { label: 'Casita para armar', text: 'piezas de galleta (paredes, techo y base de casita) con relieve de puerta y ventanas.' },
       { label: '3 mangas de glasé real', text: 'verde, blanco y rojo, para pegar las piezas y decorar.' },
       { label: 'Para decorar', text: 'lentejitas, marshmallows y grageas navideñas.' },
       { label: 'Galletas decorativas', text: '1 muñeco de jengibre y 1 árbol.' },
       { label: 'Para la escena', text: '1 bastón de caramelo.' },
       { label: 'Para jugar', text: 'dibujo para pintar, carta para Santa Claus e instrucciones paso a paso.' },
-      { label: 'Presentación', text: 'caja “Feliz Navidad” con tarjeta de agradecimiento.' },
+      { label: 'Presentación', text: 'caja “Feliz Navidad”.' },
     ],
   },
   {

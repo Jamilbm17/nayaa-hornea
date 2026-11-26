@@ -274,7 +274,7 @@ def build():
         ["<b>Variedad de galletas:</b> 5 mini chips, 5 polvorones, 3 choco brownie, 4 niditos de amor y 11 estrellitas.",
          "<b>Galletas navideñas:</b> 1 árbol y 1 muñeco de jengibre.",
          "<b>Bien cuidadas:</b> cada galletita va en su capacillo, acomodada con cariño.",
-         "<b>Presentación:</b> caja kraft con ventana, lazo y tarjeta de agradecimiento."],
+         "<b>Presentación:</b> caja kraft con ventana y lazo."],
         [polaroid(crop("1", POL, POL, .50, .74, 1.7), "por dentro", -5)],
         "Lista para regalar", 11))
 
@@ -282,13 +282,13 @@ def build():
         "02", "Caja de casita navideña", "armen juntos una casita de ensueño",
         "Una tarde de risas, glasé y mucha imaginación para armar y decorar tu propia casita y crear recuerdos que se quedan en el corazón.", "45",
         crop("2", HERO_W, HH["02"], .5, .55, 1.0, "Caja Feliz Navidad"),
-        ["<b>Casita para armar:</b> piezas de galleta (paredes y techo) con relieve de puerta y ventanas.",
+        ["<b>Casita para armar:</b> piezas de galleta (paredes, techo y base de casita) con relieve de puerta y ventanas.",
          "<b>3 mangas de glasé real:</b> verde, blanco y rojo, para pegar las piezas y decorar.",
          "<b>Para decorar:</b> lentejitas, marshmallows y grageas navideñas.",
          "<b>Galletas decorativas:</b> 1 muñeco de jengibre y 1 árbol.",
          "<b>Para la escena:</b> 1 bastón de caramelo.",
          "<b>Para jugar:</b> dibujo para pintar, carta para Santa Claus e instrucciones paso a paso.",
-         "<b>Presentación:</b> caja “Feliz Navidad” con tarjeta de agradecimiento."],
+         "<b>Presentación:</b> caja “Feliz Navidad”."],
         [polaroid(crop("4", POL, POL, .50, .74, 1.7), "todo lo que trae", -4)],
         "Diversión para toda la familia", 21))
 
