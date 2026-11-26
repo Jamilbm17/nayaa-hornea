@@ -283,7 +283,7 @@ def build():
         "Una tarde de risas, glasé y mucha imaginación para armar y decorar tu propia casita y crear recuerdos que se quedan en el corazón.", "45",
         crop("2", HERO_W, HH["02"], .5, .55, 1.0, "Caja Feliz Navidad"),
         ["<b>Casita para armar:</b> piezas de galleta (paredes y techo) con relieve de puerta y ventanas.",
-         "<b>Base de casita:</b> base de otro material, para armar tu casita encima.",
+         "<b>Piso para casita:</b> para ensamblar las piezas encima.",
          "<b>3 mangas de glasé real:</b> verde, blanco y rojo, para pegar las piezas y decorar.",
          "<b>Para decorar:</b> lentejitas, marshmallows y grageas navideñas.",
          "<b>Galletas decorativas:</b> 1 muñeco de jengibre y 1 árbol.",

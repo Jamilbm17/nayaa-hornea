@@ -66,7 +66,7 @@ export const PRODUCTS: Product[] = [
     photoFocus: '50% 62%',
     specs: [
       { label: 'Casita para armar', text: 'piezas de galleta (paredes y techo) con relieve de puerta y ventanas.' },
-      { label: 'Base de casita', text: 'base de otro material, para armar tu casita encima.' },
+      { label: 'Piso para casita', text: 'para ensamblar las piezas encima.' },
       { label: '3 mangas de glasé real', text: 'verde, blanco y rojo, para pegar las piezas y decorar.' },
       { label: 'Para decorar', text: 'lentejitas, marshmallows y grageas navideñas.' },
       { label: 'Galletas decorativas', text: '1 muñeco de jengibre y 1 árbol.' },

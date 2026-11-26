@@ -1,2 +1,2 @@
 // ARCHIVO GENERADO por scripts/embed-views.js. No editar a mano.
-export const BUILD_ID = "mwxyq6h9";
+export const BUILD_ID = "mwxzvadm";
