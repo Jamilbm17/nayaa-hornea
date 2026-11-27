@@ -284,7 +284,7 @@ def build():
         crop("2", HERO_W, HH["02"], .5, .55, 1.0, "Caja Feliz Navidad"),
         ["<b>Casita para armar:</b> piezas de galleta (paredes y techo) con relieve de puerta y ventanas.",
          "<b>Piso para casita:</b> para ensamblar las piezas encima.",
-         "<b>3 mangas de glasé real:</b> verde, blanco y rojo para decorar y un glasé para pegar las piezas.",
+         "<b>3 mangas de glasé real:</b> verde, blanco y rojo para decorar, y 1 manga extra de glasé para pegar las piezas.",
          "<b>Para decorar:</b> lentejitas, marshmallows y grageas navideñas.",
          "<b>Galletas decorativas:</b> 1 muñeco de jengibre y 1 árbol.",
          "<b>Para la escena:</b> 1 bastón de caramelo.",
