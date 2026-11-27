@@ -284,11 +284,11 @@ def build():
         crop("2", HERO_W, HH["02"], .5, .55, 1.0, "Caja Feliz Navidad"),
         ["<b>Casita para armar:</b> piezas de galleta (paredes y techo) con relieve de puerta y ventanas.",
          "<b>Piso para casita:</b> para ensamblar las piezas encima.",
-         "<b>3 mangas de glasé real:</b> verde, blanco y rojo, para pegar las piezas y decorar.",
+         "<b>3 mangas de glasé real:</b> verde, blanco y rojo para decorar y un glasé para pegar las piezas.",
          "<b>Para decorar:</b> lentejitas, marshmallows y grageas navideñas.",
          "<b>Galletas decorativas:</b> 1 muñeco de jengibre y 1 árbol.",
          "<b>Para la escena:</b> 1 bastón de caramelo.",
-         "<b>Para jugar:</b> dibujo para pintar, carta para Santa Claus e instrucciones paso a paso.",
+         "<b>De obsequio:</b> dibujo para pintar, carta para Santa Claus e instrucciones paso a paso.",
          "<b>Presentación:</b> caja “Feliz Navidad”."],
         [polaroid(crop("4", POL, POL, .50, .74, 1.7), "todo lo que trae", -4)],
         "Diversión para toda la familia", 21))

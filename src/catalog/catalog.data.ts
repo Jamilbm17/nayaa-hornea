@@ -67,11 +67,11 @@ export const PRODUCTS: Product[] = [
     specs: [
       { label: 'Casita para armar', text: 'piezas de galleta (paredes y techo) con relieve de puerta y ventanas.' },
       { label: 'Piso para casita', text: 'para ensamblar las piezas encima.' },
-      { label: '3 mangas de glasé real', text: 'verde, blanco y rojo, para pegar las piezas y decorar.' },
+      { label: '3 mangas de glasé real', text: 'verde, blanco y rojo para decorar y un glasé para pegar las piezas.' },
       { label: 'Para decorar', text: 'lentejitas, marshmallows y grageas navideñas.' },
       { label: 'Galletas decorativas', text: '1 muñeco de jengibre y 1 árbol.' },
       { label: 'Para la escena', text: '1 bastón de caramelo.' },
-      { label: 'Para jugar', text: 'dibujo para pintar, carta para Santa Claus e instrucciones paso a paso.' },
+      { label: 'De obsequio', text: 'dibujo para pintar, carta para Santa Claus e instrucciones paso a paso.' },
       { label: 'Presentación', text: 'caja “Feliz Navidad”.' },
     ],
   },
